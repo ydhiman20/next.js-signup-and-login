@@ -56,13 +56,15 @@ function Page() {
         <ToastContainer />
         <div className="w-full max-w-4xl bg-white flex flex-col md:flex-row rounded-lg shadow-lg item-">
           {/* Left Side - Info Section */}
-          <div className="md:w-1/2 bg-red-600 text-white text-center p-8 flex flex-col justify-center items-start space-y-4">
+          <div className="md:w-1/2 bg-red-600 text-white text-center p-8 flex flex-col justify-center space-y-4">
             <img
               src="https://loremflickr.com/200/200"
               alt="Sign Up"
               className="mb-4 block rounded-full m-auto"
             />
-            <h2 className="text-3xl font-bold">Welcome Back!</h2>
+            <h2 className="text-3xl font-bold text-center block">
+              Welcome Back!
+            </h2>
             <p className="text-xl">
               Log in to access your dashboard and continue where you left off.
             </p>
