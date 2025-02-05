@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Next.js Signup and Login
 
-First, run the development server:
+A simple project demonstrating the implementation of user authentication using Signup and Login functionalities in Next.js. This project covers creating a user authentication system, handling form submissions, and managing user state in a Next.js application.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Image](https://github.com/user-attachments/assets/8bce3ecf-1037-45e2-bf1b-8d0637eccf9c)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- User Registration (Signup)
+- User Login
+- Form validation for both login and signup
+- Simple UI built with React
+- Session management using JWT (or any other authentication method)
+- Error handling and form feedback
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech Stack
 
-## Learn More
+- **Next.js**: A React framework for server-side rendering and static site generation.
+- **React**: JavaScript library for building user interfaces.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **JWT**: JSON Web Tokens for handling authentication (or any preferred method).
+- **Axios**: HTTP client for making requests to the server.
 
-To learn more about Next.js, take a look at the following resources:
+## Setup Instructions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   git clone https://github.com/ydhiman20/next.js-signup-and-login.git
+   ```
 
-## Deploy on Vercel
+2. Navigate into the project directory:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   cd next.js-signup-and-login
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Install the required dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Set up environment variables. Create a `.env.local` file in the root of the project and add your environment variables like API URLs, JWT secrets, etc. For example:
+
+   ```bash
+   NEXT_PUBLIC_API_URL=http://localhost:5000/api
+   JWT_SECRET=your-secret-key
+   ```
+
+5. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+6. Visit [http://localhost:3000](http://localhost:3000) to view the app in your browser.
+
+## Usage
+
+- Go to the **Signup** page to create a new account by providing necessary user details.
+- Go to the **Login** page to sign in using registered credentials.
+
+## Contributing
+
+Feel free to fork this repository and create a pull request with any improvements or features you'd like to contribute.
